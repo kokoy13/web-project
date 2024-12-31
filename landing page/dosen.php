@@ -1,5 +1,5 @@
 <!-- Page Title -->
-    <div class="page-title" id="" data-aos="fade">
+<div class="page-title" id="" data-aos="fade">
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
