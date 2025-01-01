@@ -49,7 +49,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <h1 class="sitename">TRPL2B</h1>
       </a>
@@ -73,7 +73,7 @@
       </nav>
 
       <div>
-          <a href="contact.html" class="btn-login">Login<br></a>
+          <a href="login.php" class="btn-login">Login<br></a>
       </div>
 
     </div>
@@ -86,14 +86,10 @@
 
       if($page == 'home') 
         include('home.php');
-      else if($page == 'mhs') 
-        include('mahasiswa.php');
-      else if($page == 'prodi') 
-        include('prodi.php');
-      else if($page == 'dosen') 
-        include('dosen.php');
       else if($page == 'berita') 
         include('berita.php');
+      else
+        include('contents.php');
     ?>
   </main>
 
