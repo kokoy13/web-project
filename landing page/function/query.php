@@ -11,4 +11,14 @@
         }
         return $rows;
     }
+
+    function news(){
+        $query = query("SELECT judul_berita, file_upload, isi_berita, date_created FROM berita order by date_created DESC");
+        return $query;
+    }
+
+    function news2(){
+        $query = query("SELECT judul_berita, file_upload, isi_berita, date_created FROM berita order by date_created DESC limit 8");
+        return $query;
+    }
 ?>

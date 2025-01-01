@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - PhotoFolio Bootstrap Template</title>
+  <title>Web TRPL</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -28,18 +28,22 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
     .btn-login{
-      font-size: larger;
+      font-size: medium;
       padding: 12px 48px;
       border-radius: 20px;
       background-color: rgb(75,168,118);
       color: white;
-      font-size: medium;
+      font-weight: 500;
     }
     .btn-login:hover{
       background-color: white;
     }
     section .intro{
       padding: 0 12px;
+    }
+    .page-title .heading {
+      padding: 50px 0;
+      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     }
   </style>
 </head>
@@ -50,22 +54,14 @@
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <h1 class="sitename">TRPL2B</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php" class="active">Home<br></a></li>
+          <li><a href="index.php">Home<br></a></li>
           <li><a href="?p=mhs">Mahasiswa</a></li>
-          <li class="dropdown"><a href="?p=prodi"><span>Prodi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="?p=trpl">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
-              <li><a href="?p=animasi">D4 Animasi</a></li>
-              <li><a href="?p=tekom">D3 Teknik Komputer</a></li>
-              <li><a href="?p=mi">D3 Manajemen Informatika</a></li>
-            </ul>
-          </li>
+          <li><a href="?p=prodi">Prodi</a></li>
           <li><a href="?p=dosen">Dosen</a></li>
           <li><a href="?p=berita">Berita</a></li>
         </ul>
@@ -136,7 +132,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/navbar.js"></script>
 </body>
 
 </html>

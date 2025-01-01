@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Dec 31, 2024 at 12:42 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 01 Jan 2025 pada 13.54
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `trpl`
+-- Database: `trpl2b`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `berita`
+-- Struktur dari tabel `berita`
 --
 
 CREATE TABLE `berita` (
@@ -38,20 +38,23 @@ CREATE TABLE `berita` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `berita`
+-- Dumping data untuk tabel `berita`
 --
 
 INSERT INTO `berita` (`id`, `user_id`, `kategori_id`, `judul_berita`, `file_upload`, `isi_berita`, `date_created`) VALUES
-(4, 2, 3, 'sLorem ipsum dolor sit amet consectetur a', '675bd75fc3a40.jpg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repudiandae id nisi ea dignissimos harum veritatis optio sint praesentium ut recusandae perspiciatis quos quas ipsum voluptate voluptatibus autem, consequuntur exercitationem cum asperiores nemo sunt ipsa similique ad. Voluptas libero rerum ducimus molestiae natus amet consequatur exercitationem similique maxime unde consectetur delectus, nisi aut ipsa ullam suscipit deserunt consequuntur officia maiores, harum sed, temporibus facilis! Molestias a dolorum, obcaecati cum suscipit, commodi recusandae voluptatem voluptas corrupti quos quod, velit dignissimos nemo est atque libero. Repellendus veniam amet, vero cumque sequi ad laborum explicabo laboriosam ipsum, maxime excepturi quasi sunt quia ex adipisci asperiores iste tempora eos vitae aliquam impedit! Molestias, laudantium autem ', '2024-12-13 04:06:33'),
-(5, 2, 4, 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, eveniet.', '675bdd57dc4e7.png', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, hic ratione repellat eum qui quidem perspiciatis culpa nesciunt eveniet provident incidunt non corporis quis laborum, magnam aliquid adipisci enim at aliquam voluptas, molestias corrupti. Fugit suscipit tenetur doloribus laborum quos, esse quibusdam expedita voluptate. Maxime dolor minus corporis itaque tenetur! Consequuntur, voluptatum? Nulla quos inventore ipsam, atque maiores excepturi officiis! Totam dolore est, magnam sapiente veritatis necessitatibus! Tenetur dolore vel sunt, magni doloribus quod totam perferendis. Velit atque a optio quae beatae magni perspiciatis rem animi delectus ipsa, quas aperiam eum. Harum voluptates odio, fuga consectetur aperiam perspiciatis veritatis tempora voluptatum reiciendis debitis ipsa ratione animi aspernatur facilis, doloribus ad earum ducimus natus? Deserunt voluptas beatae esse aspernatur quidem! Non corporis similique assumenda aspernatur atque excepturi earum maxime! Voluptate quod sed pariatur quae minima, iusto autem architecto, eos ducimus numquam omnis qui! Provident quaerat laborum, nemo id quod velit architecto facilis maiores mollitia, consectetur labore ipsa earum at fuga sunt doloremque eveniet, dicta molestias suscipit corrupti magni tempora consequatur! Maxime corporis quisquam voluptatibus enim magnam ipsa. Optio, eligendi. Sapiente molestiae facere nihil, autem ex aperiam fugit odio illum ratione illo atque eos blanditiis consectetur ut quam nemo ad qui architecto recusandae, voluptatum veritatis. Quibusdam labore magnam temporibus debitis, eum cupiditate. Nulla eligendi veritatis in ad dicta! Quae qui iusto ratione quas obcaecati consectetur doloribus quos commodi eaque! Dolores hic quos sit odit perspiciatis quaerat at culpa quis cum! Tenetur animi quod dolore delectus consequatur. Asperiores accusamus corrupti cumque eveniet perspiciatis! Quaerat accusamus rerum sed, quidem ea ipsam itaque eos. Voluptas exercitationem a adipisci aut, impedit iusto odio. Nam quasi quaerat repellendus excepturi, earum distinctio voluptatibus aperiam deserunt asperiores totam minima fuga vel minus sed modi corrupti aut eius laborum laudantium commodi non soluta fugiat ipsam praesentium. Non facilis quia beatae!', '2024-12-13 04:22:06'),
-(6, 2, 2, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, beatae.', '675bd996456ed.png', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque est consequatur nulla obcaecati a, non qui, repellat ipsa iure sed voluptas? Tempora perferendis laudantium, nobis praesentium cum provident, eveniet sed nihil ab accusamus est nemo eius voluptas, doloribus aut laborum itaque voluptates officia culpa voluptate nostrum unde nesciunt autem? Cum porro ullam cupiditate temporibus ipsa voluptatum consectetur molestias! Ut ullam totam, temporibus, inventore magni quae corporis cupiditate, itaque veritatis laborum et corrupti! Obcaecati unde labore hic ducimus consequuntur, incidunt iusto dignissimos dolorem mollitia beatae perferendis itaque quis corporis debitis architecto, aut maiores suscipit necessitatibus, inventore sunt tempora dolor. Laboriosam ab nostrum sit, tenetur odio atque, explicabo officia et qui illo officiis quibusdam enim dolore doloribus modi incidunt dolorem consequuntur aspernatur eaque at omnis eius quia perferendis. Asperiores cum aperiam facilis ipsum molestias dignissimos id voluptatibus dolore dolorem. Possimus laudantium porro tenetur repellendus accusamus temporibus enim est culpa labore aspernatur nulla fugiat cupiditate voluptatem quas ducimus accusantium quibusdam officiis ullam aliquid sed hic quisquam, dolores ut. Sapiente unde beatae alias, est id animi, at praesentium quaerat, in asperiores dolore assumenda ipsam. Similique placeat debitis dolores quisquam sequi? Quam voluptas, esse soluta laudantium maiores expedita, in rem tempora dolor sed perspiciatis. Quaerat eum, distinctio ab error, odio ut consequuntur velit obcaecati quisquam reprehenderit animi a, temporibus nesciunt tempore earum enim reiciendis voluptas voluptate! Alias inventore velit modi fugit similique possimus, accusantium commodi qui obcaecati itaque eos. Praesentium tempore dolor commodi veritatis doloribus libero magnam cupiditate ullam molestiae nisi, delectus hic modi a dolores quos voluptates quia est consectetur quidem odit. Tempore ea odio ex non, corporis neque sed incidunt placeat. Sit, error minima eum qui blanditiis harum natus deleniti sapiente aliquid ratione explicabo! Perferendis quasi fugit aperiam quibusdam totam sit quidem dignissimos quia inventore aliquid eos sequi dolor omnis in a laboriosam dolore expedita sunt aut, nobis temporibus consectetur enim. Reiciendis beatae nesciunt vel, magni repellat, obcaecati consectetur placeat voluptatum totam, hic delectus minima adipisci ipsum ducimus! Alias officia architecto laborum quidem sed accusamus! Tempore asperiores qui cumque. Nihil alias fugit maxime est numquam corrupti sunt aliquam nisi. Ipsa doloremque incidunt dignissimos amet, quod similique eveniet ducimus explicabo voluptatum natus nihil. Recusandae vel deleniti iure consequatur natus itaque pariatur quaerat expedita iste similique, facere asperiores nisi aliquam deserunt dolorem quis voluptas, vitae nobis blanditiis adipisci, beatae voluptatibus laudantium! Perferendis excepturi nemo qui autem recusandae exercitationem dignissimos quia, nesciunt voluptatibus dolorem non unde?', '2024-12-13 06:52:06'),
-(7, 2, 4, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quod?', '675bdd306c3e8.png', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis illum minus rerum nemo soluta saepe neque quisquam quidem odio, ipsum aliquid, maxime doloribus vero consequuntur eos voluptatibus voluptas ut, sit quaerat eum illo! Sint, voluptatum ipsam aut porro debitis et dignissimos vero officia adipisci, odit facilis? Ratione debitis dicta illo a, at velit vel provident modi facere voluptate necessitatibus tenetur voluptatum autem error pariatur eligendi unde laborum harum dolorum maiores quia vero neque cumque! Aspernatur fugiat ex qui doloremque vitae aliquam, quia ea iste ratione veniam libero quidem at perspiciatis deleniti tempora ullam mollitia aut. Tempora eum perspiciatis ut saepe necessitatibus neque impedit officiis fugit perferendis alias ex cupiditate quibusdam ipsam, ullam consequatur animi. Maxime ut doloribus fuga incidunt? Exercitationem dolorem debitis eos voluptates recusandae voluptatem tempore incidunt quos obcaecati in possimus, magnam facere quae repellendus vero eveniet sit nemo maiores molestias perferendis blanditiis nostrum minus aliquam! Omnis earum aut sed iste ipsa voluptates deserunt suscipit vitae commodi officia corrupti quas animi, architecto, ut quis accusamus voluptatibus reiciendis sint aliquam nam ducimus facilis atque? Ex est, voluptatibus provident pariatur itaque incidunt deserunt ducimus veniam, soluta eum laborum consequuntur maxime voluptatem! Explicabo sequi aliquid soluta harum reprehenderit iusto corporis quae dicta rerum, praesentium maiores vero, minima eos laudantium, non ut dolorum? Delectus eaque suscipit impedit saepe aspernatur aut, esse nostrum perferendis magni minus eum quisquam dignissimos explicabo tempore consequuntur, ad earum sed. Atque culpa mollitia debitis commodi voluptatum quis expedita enim quasi ea facilis, adipisci placeat rerum aspernatur id illo ipsum repudiandae. Error, ipsa vero. Quas aspernatur alias rerum ex reprehenderit commodi voluptates corrupti reiciendis quis eaque. Nobis error cupiditate dignissimos accusamus deleniti corrupti mollitia odio numquam, quae impedit aut tenetur recusandae quia iusto architecto aliquam suscipit non voluptas. Esse fugiat a asperiores nobis ex, sed est quia sit distinctio blanditiis, minus quasi maiores corrupti quidem minima vitae? Suscipit illum corrupti facere quasi ut dolores quam nam, sint repellat ex? Neque minima ex ipsum sunt maiores cum quaerat earum eveniet, suscipit, officia quisquam. Dignissimos quod fugit aliquam tempore magnam illum iure. Officia, aspernatur aut. Esse quaerat consequuntur, illum sed facilis obcaecati adipisci deserunt commodi culpa dolorum placeat libero repudiandae eveniet unde nesciunt! Aliquid, nulla repudiandae impedit porro omnis molestiae corrupti consequatur totam odio maiores inventore laboriosam culpa a animi quis officia at magnam ex facere aspernatur hic ea. Delectus qui porro odio impedit consequatur voluptatibus! Aliquid a neque blanditiis corporis tempore!', '2024-12-13 07:04:58'),
-(9, 2, 2, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, maiores!', '67628044dd70b.png', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis quas hic corrupti sunt amet quam commodi officiis ipsa numquam? Tempora facilis necessitatibus nisi reiciendis nemo quibusdam. Nisi fuga adipisci explicabo beatae pariatur consequatur tempora eveniet quibusdam expedita dolorum eos repudiandae iusto debitis eum optio itaque in quasi aliquam nihil, sunt sed! Nesciunt, itaque quasi. Tempore sed voluptas repellat nostrum modi suscipit numquam nobis, necessitatibus, et saepe aperiam laborum facilis amet deleniti reiciendis similique magnam totam distinctio ullam, maiores dolore. Temporibus sunt aperiam voluptas consequatur maiores facilis suscipit? Tempora amet omnis nostrum aperiam aspernatur voluptas ad, nihil error iure. Non.', '2024-12-18 07:56:52');
+(4, 2, 3, 'Tim PKM PM Politeknik Negeri Padang Rancang Website Untuk Rumah Singgah Pasien M.Ihpan', 'berita-1.jpg', 'Program Kreativitas Mahasiswa bidang Pengabdian kepada Masyarakat (PKM-PM) berfokus dalam memberikan bantuan iptek kepada mitra program sebagai bentuk solusi atas permasalahan atau kebutuhan prioritas mitra yang teridentifikasi saat mahasiswa dan mitra berdiskusi sebelum kesepakatan bersama dicapai. PKM-PM bertujuan memberikan kesempatan kepada mahasiswa untuk berinteraksi secara aktif dengan masyarakat mitra non profit; menumbuhkan tenggang rasa dan solidaritas terhadap masalah yang dihadapi masyarakat mitra; serta menerapkan ilmu pengetahuan, teknologi dan seni untuk membantu menyelesaikan permasalahan mitra.\r\n\r\nTim PKM Politeknik Negeri Padang dibimbing langsung oleh Bapak Fazrol Rozi, M.Sc dan diketuai oleh Gybran Nauval Yuhandika dengan anggota Altaf Hafizun, Githani Rizkyka Pasya, M.Nawaf Akbar, serta Wirda Nissa.\r\n\r\nAdapun proses seleksi PKM-PM Vokasi ini dimulai dengan tahap seleksi proposal. Tim Mahasiswa berdiskusi dengan pihak mitra yaitu Rumah Singgah Pasien M.Ihpan yang berlokasi di Jl. Dr. H. Abdullah Ahmad No.17 Sawahan memiliki jarak +- 230 meter dari RSUP M.Djamil. Rumah singgah M.Ihpan terdapat fasilitas kamar tidur, kamar mandi, peralatan memasak, kursi roda, ruang tamu, sembako, serta bimbingan berobat. RSP M.Ihpan dikhususkan untuk masyarakat yang berasal dari Kab. Pasaman dan Kab. Pasaman Barat. Hal ini disebabkan jarak antara Kab. Pasaman dan Kab. Pasaman Barat dengan RSUP M.Djamil +- 250 km sehingga masyarakat Kab. Pasaman dan Kab. Pasaman Barat tidak memiliki tempat tinggal sementara selama menjalani pengobatan.\r\n\r\nRumah Singgah Pasien M.Ihpan juga masih menggunakan pendataan pasien secara manual sehingga tim PKM PM merancang sistem informasi berbasis website dengan tujuan dapat meningkatkan aksebilitas dan pengelolaan rumah singgah pasien M.Ihpan.\r\n\r\nProses PKM ini berlangsung selama empat (4) bulan dimulai dari tanggal 27 April 2024 s.d bulan Agustus nanti. Mohon doanya agar tim PKM PM Politeknik Negeri Padang dapat lolos sampai Pekan Ilmiah Mahasiswa Nasional (PIMNAS) ke-37 yang digelar di Universitas Airlangga (Unair) Surabaya. Jangan lupa kepoin kegiatan kami di instagram @pkmpm.rspmihpan', '2024-12-13 04:06:33'),
+(5, 2, 4, 'Tim Peridot Raih Juara 2 di HACKATHON 4.0', 'berita-2.jpg', 'Nama Tim: Peridot\r\nAnggota Tim:\r\n\r\nRanaufal Muha\r\nAhmad Zulveron\r\nYefri Afri Zandra\r\nDeskripsi Proyek:\r\nPeridot adalah platform revolusioner yang dibangun di atas blockchain Internet Computer Protocol (ICP), yang mengintegrasikan dunia gaming dan teknologi NFT. Proyek ini bertujuan untuk menciptakan ekosistem yang dinamis di mana gamer, pengembang game, dan pembuat NFT dapat berinteraksi dan bertransaksi dengan mudah dan aman.\r\n\r\nPenghargaan: Meraih Juara 2 pada HACKATHON 4.0 oleh codefest.id\r\nHadiah: Rp. 5.000.000,-\r\n\r\nTim Peridot, yang terdiri dari Ranaufal Muha, Ahmad Zulveron, dan Yefri Afri Zandra, berhasil meraih Juara 2 dalam kompetisi HACKATHON 4.0 yang diselenggarakan oleh codefest.id. Dengan proyek mereka yang revolusioner, Peridot, tim ini menunjukkan keunggulan dalam mengintegrasikan teknologi blockchain ICP dengan dunia gaming dan NFT.\r\n\r\nPeridot adalah platform revolusioner yang dibangun di atas blockchain Internet Computer Protocol (ICP). Proyek ini bertujuan untuk menciptakan ekosistem yang kaya dan dinamis di mana para gamer, pengembang game, dan pembuat NFT dapat berinteraksi dan bertransaksi dengan mudah dan aman. Integrasi antara gaming dan teknologi NFT dalam satu platform ini menawarkan pengalaman baru yang menarik dan inovatif bagi semua penggunanya.\r\n\r\nHACKATHON 4.0 adalah ajang kompetisi tahunan yang diadakan oleh codefest.id, yang bertujuan untuk mendorong inovasi dan kreativitas dalam pengembangan teknologi. Kompetisi ini diikuti oleh tim-tim dari berbagai latar belakang, yang bersaing untuk mengembangkan solusi teknologi terbaru dalam waktu terbatas. Dengan konsep hackathon, peserta ditantang untuk merancang, mengembangkan, dan mempresentasikan proyek mereka dalam jangka waktu yang singkat, sehingga menuntut kecepatan, ketepatan, dan kreativitas yang tinggi.\r\n\r\nPada ajang HACKATHON 4.0 ini, Tim Peridot berhasil menarik perhatian para juri dengan konsep dan eksekusi proyek mereka yang solid. Sebagai penghargaan atas prestasi mereka, Tim Peridot berhak menerima hadiah sebesar Rp. 5.000.000,-. Pencapaian ini menjadi bukti nyata atas kerja keras dan dedikasi tim dalam mengembangkan solusi berbasis teknologi yang inovatif.\r\n\r\nPrestasi ini diharapkan dapat memotivasi mahasiswa lain untuk terus berinovasi dan berpartisipasi dalam kompetisi-kompetisi teknologi serupa, guna memberikan kontribusi positif bagi perkembangan teknologi di Indonesia.', '2024-12-13 04:22:06'),
+(6, 2, 2, 'Mahasiswa Jurusan TI Raih Juara 1 di KMIPN VI', 'berita-3.jpg', 'Pada ajang bergengsi Kompetisi Mahasiswa Informatika Politeknik Nasional (KMIPN) VI yang diselenggarakan di Politeknik Negeri Jakarta, mahasiswa jurusan Teknologi Informasi berhasil mengukir prestasi membanggakan. Tim Caiman, yang terdiri dari Firman Ardiansyah sebagai ketua, serta Aditya Ibnu Arif dan Jesica Sanditia Putri sebagai anggota, berhasil meraih Juara 1 dalam kategori Desain Profil Produk Inovasi dengan produk mereka yang inovatif, “Sketoo”.\r\n\r\nKMIPN merupakan kompetisi tahunan yang diadakan untuk mendorong kreativitas dan inovasi mahasiswa dalam bidang informatika. Pada tahun ini, Politeknik Negeri Jakarta menjadi tuan rumah bagi kompetisi bergengsi ini, dan Tim Caiman sukses menunjukkan keunggulan mereka di hadapan para juri dan peserta lainnya.\r\n\r\n“Sketoo” adalah produk inovatif yang dikembangkan oleh Tim Caiman, yang menonjol dengan desain dan fungsionalitas yang memukau. Keberhasilan tim ini tidak lepas dari bimbingan dosen-dosen berkompeten, Fazrol Rozi dan Ardian Firosha, serta dosen lainnya yang memberikan dukungan penuh dan arahan selama proses pengembangan produk.\r\n\r\nFirman Ardiansyah, ketua tim, menyampaikan rasa syukurnya atas pencapaian ini. “Kami sangat bangga bisa membawa pulang Juara 1 di KMIPN VI. Ini adalah hasil kerja keras dan kolaborasi yang luar biasa dari seluruh anggota tim serta dukungan dari dosen pembimbing kami.”\r\n\r\nPrestasi ini diharapkan dapat menjadi inspirasi bagi mahasiswa lainnya untuk terus berinovasi dan mengembangkan ide-ide kreatif yang dapat memberikan kontribusi positif bagi perkembangan teknologi informasi di Indonesia.\r\n\r\nSelamat kepada Tim Caiman atas prestasi gemilangnya! Teruslah berkarya dan berinovasi untuk masa depan yang lebih baik.', '2024-12-13 06:52:06'),
+(7, 2, 4, 'Jurusan Teknologi Informasi Politeknik Negeri Padang Raih Prestasi Gemilang di Kompetisi Mahasiswa I', 'berita-4.jpg', '*Padang, 4 Agustus 2023* – Tiga tim dari Politeknik Negeri Padang (PNP) telah menunjukkan kelasnya dalam Kompetisi Mahasiswa Informatika Politeknik Nasional yang berlangsung di Politeknik Elektronika Negeri Surabaya pada tanggal 31 Juli hingga 3 Agustus 2023. Kompetisi yang diikuti oleh berbagai politeknik ternama dari seluruh Indonesia ini memberikan panggung untuk mahasiswa-mahasiswa teknologi informasi unggulan menampilkan kemampuan mereka.\r\n\r\nTim-tim dari PNP yang turut berkompetisi adalah GOMU Team, GloryTech, dan tim ZENITH. Keberhasilan mereka dalam mencapai berbagai tahap kompetisi ini adalah prestasi yang membanggakan, menunjukkan bahwa PNP mampu menghasilkan mahasiswa yang mampu bersaing di tingkat nasional dalam bidang teknologi informasi.\r\n\r\nSalah satu pencapaian yang patut dicatat adalah keberhasilan tim GOMU Team, GloryTech, dan tim ZENITH dalam meraih tempat di final kompetisi. Dengan persaingan yang ketat dan tantangan yang kompleks, ketiga tim ini telah memperlihatkan kerja keras, dedikasi, dan kerja sama yang kuat untuk mengatasi semua rintangan yang dihadapi.\r\n\r\nKompetisi Mahasiswa Informatika Politeknik Nasional merupakan ajang tahunan yang bergengsi di bidang teknologi informasi, di mana para mahasiswa dari berbagai politeknik di Indonesia berkompetisi dalam berbagai cabang ilmu seperti pemrograman, pengembangan perangkat lunak, kecerdasan buatan, dan lainnya. Selain bertujuan untuk meningkatkan kualitas pendidikan di bidang teknologi informasi, kompetisi ini juga menjadi sarana untuk saling bertukar pengalaman dan pengetahuan antara mahasiswa-mahasiswa dari berbagai daerah.\r\n\r\nSelain itu, tim GLORY Tech juga berhasil meraih penghargaan “Best Team Work” atas kerja sama tim yang luar biasa dalam menghadapi berbagai tugas dan ujian dalam kompetisi ini. Prestasi ini menjadi bukti nyata bahwa kolaborasi tim yang baik mampu menghasilkan solusi-solusi kreatif dan efektif dalam dunia teknologi informasi.\r\n\r\nKompetisi Mahasiswa Informatika Politeknik Nasional tidak hanya berfungsi sebagai ajang untuk bersaing, tetapi juga sebagai platform pembelajaran dan pertukaran pengetahuan antar mahasiswa dari berbagai daerah. Dengan keberhasilan ini, PNP semakin terpacu untuk terus meningkatkan kualitas pendidikan di bidang teknologi informasi serta mendukung mahasiswanya dalam mencapai prestasi gemilang di masa depan.\r\n\r\nDengan meriahnya Kompetisi Mahasiswa Informatika Politeknik Nasional tahun ini, diharapkan semakin banyak mahasiswa yang terinspirasi untuk mengembangkan potensi dan kemampuan mereka dalam teknologi informasi. Selamat kepada Jurusan Teknologi Informasi PNP atas prestasi luar biasa ini, semoga semakin banyak prestasi-prestasi gemilang yang akan diukir di masa depan.', '2024-12-13 07:04:58'),
+(9, 2, 2, 'Mahasiswa Jurusan Teknologi Informasi Memenangkan kejuaraan Internasional di Thailand', 'berita-5.jpg', 'Mahasiswa Jurusan Teknologi Informasi memenangkan sebuah kompetisi Internasional yang dilaksanakan di Thailand yaitu kompetisi SAFE-network & Maejo University, Product Inovation Competition di Chiang Mai, Thailand.\r\n\r\nDimana finalis yang mengikuti kompetisi ini adalah dari negara Indonesia, Thailand, vietname, Miyanmar, Philipina, Malaysia, India dan Nigeria\r\n\r\nPemenang dari kompetisi ini adalah :\r\n\r\nLapak Petani (Mendali Emas) : Arsyad Hamidi, Zalna Mustika, Sonya Hasna Hafiza, Singari Aulia\r\nTrolley Petani (Mendali Silver) : Gibran Naufal Yuhandika, Githani Rizkyka Pasha, Quryata A’yunin dan Siti Nurhaliza Yus\r\nFeazy (Mendali Silver) : Ranaufal Muha,Alvin Fadli Dwi Mulya, Abdillah Hendra dan  Kurnia Asila\r\nPembimbingnya adalah Rahmat Hidayat, Aldo Erianda, Alde Alanda, Taufik Gusman dan Hidra Amnur', '2024-12-18 07:56:52'),
+(10, 2, 2, 'Mahasiswa TEKINFO Juara Umum Mobile Apps Competisi 6.0 di Malaysia', 'berita-6.jpg', 'Mahasiswa Jurusan Teknologi Informasi Politeknik Negeri Padang menjuarai sebuah kompetisi di Universiti Sarawak Malaysia yaitu Mobile Apps Competition 6.0. tidak tanggung-tanggung, mereka menjadi juara umum pada kompetisi tersebut\r\n\r\n', '2025-01-01 10:04:35'),
+(11, 2, 3, 'SEMINAR MENTAL HEALTH DAN COMMUNICATION SKILL BAGI CIVITAS AKADEMIKA JURUSAN TEKNOLOGI INFORMASI', 'berita-7.jpg', 'Pada hari Selasa, 20 Agustus 2024, Jurusan Teknologi Informasi Politeknik Negeri Padang sukses menyelenggarakan Seminar Mental Health dan Communication Skill bagi civitas akademika. Acara ini berlangsung di Gedung PKM Politeknik Negeri Padang dan dihadiri oleh seluruh mahasiswa jurusan Teknologi Informasi, dosen, serta tenaga kependidikan.\r\n\r\nSeminar dibuka oleh Wakil Direktur Bidang Kemahasiswaan, Ir. Nasrullah, ST, MT, yang dalam sambutannya menekankan pentingnya kesehatan mental dan kemampuan komunikasi bagi seluruh civitas akademika. Beliau berharap melalui seminar ini, para peserta dapat memahami pentingnya menjaga kesehatan mental serta meningkatkan kemampuan komunikasi yang efektif.\r\n\r\nSeminar Sesi I: Mental Health\r\n\r\nSesi pertama yang bertemakan Mental Health dimoderatori oleh Sumema, S.Ds., M.Ds. Pemateri dalam sesi ini adalah Neny Andriani, M.Psi., Psikolog, CI, C.NLP, yang merupakan Pimpinan Jogja Consultant Cabang Padang. Dalam paparannya, Neny Andriani menyampaikan betapa pentingnya kesehatan mental, terutama dalam dunia pendidikan yang penuh dengan tekanan. Ia juga memberikan tips dan strategi untuk menjaga keseimbangan emosional dan mental di tengah tuntutan akademik.\r\n\r\nSeminar Sesi II: Communication Skill\r\n\r\nSesi kedua dilanjutkan dengan materi Communication Skill yang dipandu oleh Rita Afyenni, S.Kom., M.Kom. Pemateri sesi ini, Rini Handayani, SE, MM dari Minang Hospitality Management, membahas berbagai teknik komunikasi efektif yang dapat diterapkan oleh mahasiswa dan tenaga pendidik. Ia menekankan bahwa kemampuan komunikasi yang baik dapat meningkatkan kualitas interaksi, baik di lingkungan kampus maupun dalam kehidupan sehari-hari.\r\n\r\nInteraktif dan Menghibur dengan Game Kahoot\r\n\r\nMenariknya, setiap sesi seminar diselingi dengan game interaktif Kahoot yang diikuti oleh para peserta. Game ini tidak hanya menguji pengetahuan peserta mengenai materi yang telah disampaikan, tetapi juga memberikan suasana yang lebih menyenangkan dan kompetitif.', '2025-01-01 10:09:28'),
+(12, 2, 3, 'Program Studi Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Padang Jalani Ases', 'berita-8.jpg', 'Padang, 25 Juli 2024 – Program Studi Manajemen Informatika Jurusan Teknologi Informasi Politeknik Negeri Padang hari ini memasuki tahap krusial dalam proses akreditasi, yaitu asesmen lapangan. Kegiatan yang berlangsung selama 2 hari ini melibatkan tim asesor dari Lembaga Akreditasi LAM INFOKOM untuk melakukan evaluasi menyeluruh terhadap seluruh aspek program studi.\r\n\r\nAsesmen lapangan ini bertujuan untuk menilai sejauh mana program studi telah memenuhi standar yang ditetapkan oleh LAM INFOKOM. Tim asesor akan melakukan pemeriksaan terhadap berbagai dokumen, wawancara dengan dosen, mahasiswa, alumni dan tenaga kependidikan, serta observasi langsung terhadap kegiatan akademik dan non-akademik.\r\n\r\nRoni Putra, S.Kom., MT. menyampaikan harapannya agar program studi dapat memperoleh hasil yang terbaik dalam asesmen ini. “Asesmen lapangan ini merupakan bentuk komitmen kami untuk terus meningkatkan kualitas pendidikan di Program Studi Manajemen Informatika. Kami berharap dapat memperoleh masukan yang berharga dari tim asesor untuk perbaikan ke depannya,” ujarnya.\r\n\r\nAsesmen Lapangan ini merupakan bukti nyata dari komitmen Politeknik Negeri Padang dalam memberikan pendidikan berkualitas tinggi. Diharapkan hasil asesmen ini dapat semakin memperkuat reputasi Program Studi Manajemen Informatika sebagai salah satu program studi unggulan di bidang teknologi informasi.\r\n\r\nSelama asesmen, tim penilai mengunjungi berbagai fasilitas, seperti laboratorium komputer, ruang kelas, dan pusat sumber daya belajar. Mereka juga memeriksa dokumen-dokumen penting, termasuk kurikulum, rencana pembelajaran, dan laporan evaluasi akademik. Wawancara dengan mahasiswa dan dosen bertujuan untuk menilai kualitas pengalaman belajar dan pengajaran di program studi tersebut.', '2025-01-01 10:11:12');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dosen`
+-- Struktur dari tabel `dosen`
 --
 
 CREATE TABLE `dosen` (
@@ -65,7 +68,7 @@ CREATE TABLE `dosen` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `dosen`
+-- Dumping data untuk tabel `dosen`
 --
 
 INSERT INTO `dosen` (`id`, `nip`, `nama_dosen`, `email`, `prodi_id`, `telp`, `alamat`) VALUES
@@ -77,7 +80,7 @@ INSERT INTO `dosen` (`id`, `nip`, `nama_dosen`, `email`, `prodi_id`, `telp`, `al
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kategori`
+-- Struktur dari tabel `kategori`
 --
 
 CREATE TABLE `kategori` (
@@ -86,7 +89,7 @@ CREATE TABLE `kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `kategori`
+-- Dumping data untuk tabel `kategori`
 --
 
 INSERT INTO `kategori` (`id`, `nama_kategori`) VALUES
@@ -97,14 +100,14 @@ INSERT INTO `kategori` (`id`, `nama_kategori`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswa`
+-- Struktur dari tabel `mahasiswa`
 --
 
 CREATE TABLE `mahasiswa` (
   `nim` varchar(10) NOT NULL,
   `nama` varchar(50) NOT NULL,
-  `tgl_lahir` date NOT NULL,
-  `jk` enum('L','P') NOT NULL,
+  `tanggal_lahir` date NOT NULL,
+  `jenis_kelamin` enum('L','P') NOT NULL,
   `email` varchar(50) NOT NULL,
   `alamat` varchar(100) NOT NULL,
   `prodi_id` int(11) NOT NULL,
@@ -112,16 +115,16 @@ CREATE TABLE `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `mahasiswa`
+-- Dumping data untuk tabel `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`nim`, `nama`, `tgl_lahir`, `jk`, `email`, `alamat`, `prodi_id`, `hobi`) VALUES
+INSERT INTO `mahasiswa` (`nim`, `nama`, `tanggal_lahir`, `jenis_kelamin`, `email`, `alamat`, `prodi_id`, `hobi`) VALUES
 ('2112', 'akoa', '2021-01-03', 'L', 'kkoam@koma.fs', 'kmd', 11, 'game');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `prodi`
+-- Struktur dari tabel `prodi`
 --
 
 CREATE TABLE `prodi` (
@@ -132,7 +135,7 @@ CREATE TABLE `prodi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `prodi`
+-- Dumping data untuk tabel `prodi`
 --
 
 INSERT INTO `prodi` (`id`, `nama_prodi`, `jenjang_studi`, `keterangan`) VALUES
@@ -142,7 +145,7 @@ INSERT INTO `prodi` (`id`, `nama_prodi`, `jenjang_studi`, `keterangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -154,7 +157,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id`, `full_name`, `email`, `password`, `level`) VALUES
@@ -169,7 +172,7 @@ INSERT INTO `user` (`id`, `full_name`, `email`, `password`, `level`) VALUES
 --
 
 --
--- Indexes for table `berita`
+-- Indeks untuk tabel `berita`
 --
 ALTER TABLE `berita`
   ADD PRIMARY KEY (`id`),
@@ -177,7 +180,7 @@ ALTER TABLE `berita`
   ADD KEY `berita_ibfk_1` (`kategori_id`);
 
 --
--- Indexes for table `dosen`
+-- Indeks untuk tabel `dosen`
 --
 ALTER TABLE `dosen`
   ADD PRIMARY KEY (`id`),
@@ -185,82 +188,82 @@ ALTER TABLE `dosen`
   ADD KEY `prodi_id` (`prodi_id`);
 
 --
--- Indexes for table `kategori`
+-- Indeks untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `mahasiswa`
+-- Indeks untuk tabel `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`nim`),
   ADD KEY `prodi_id` (`prodi_id`);
 
 --
--- Indexes for table `prodi`
+-- Indeks untuk tabel `prodi`
 --
 ALTER TABLE `prodi`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `berita`
+-- AUTO_INCREMENT untuk tabel `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `dosen`
+-- AUTO_INCREMENT untuk tabel `dosen`
 --
 ALTER TABLE `dosen`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `kategori`
+-- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `prodi`
+-- AUTO_INCREMENT untuk tabel `prodi`
 --
 ALTER TABLE `prodi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `berita`
+-- Ketidakleluasaan untuk tabel `berita`
 --
 ALTER TABLE `berita`
   ADD CONSTRAINT `berita_ibfk_1` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`);
 
 --
--- Constraints for table `dosen`
+-- Ketidakleluasaan untuk tabel `dosen`
 --
 ALTER TABLE `dosen`
   ADD CONSTRAINT `dosen_ibfk_1` FOREIGN KEY (`prodi_id`) REFERENCES `prodi` (`id`);
 
 --
--- Constraints for table `mahasiswa`
+-- Ketidakleluasaan untuk tabel `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
   ADD CONSTRAINT `mahasiswa_ibfk_1` FOREIGN KEY (`prodi_id`) REFERENCES `prodi` (`id`);
