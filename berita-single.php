@@ -1,16 +1,21 @@
+<?php
+  include('function/query.php');
+  include('../koneksi.php');
+  $id = ($_GET['id']);
+  $news = query("SELECT * FROM berita WHERE id = '$id'")[0];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Web TRPL</title>
+  <title><?= $news['judul_berita']; ?></title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,67 +31,42 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <style>
-    .btn-login{
-      font-size: medium;
-      padding: 12px 48px;
-      border-radius: 20px;
-      background-color: rgb(75,168,118);
-      color: white;
-      font-weight: 500;
-    }
-    .btn-login:hover{
-      background-color: white;
-    }
-    section .intro{
-      padding: 0 12px;
-    }
-    .page-title .heading {
-      padding: 50px 0;
-      border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    }
-  </style>
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index.php">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
-        <h1 class="sitename">TRPL2B</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.php">Home<br></a></li>
-          <li><a href="?p=mhs">Mahasiswa</a></li>
-          <li><a href="?p=prodi">Prodi</a></li>
-          <li><a href="?p=dosen">Dosen</a></li>
-          <li><a href="?p=berita">Berita</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div>
-          <a href="login.php" class="btn-login">Login<br></a>
-      </div>
-
-    </div>
-  </header>
+  <i class="mobile-nav-toggle"></i>
 
   <main class="main">
-    <!-- Content -->
-    <?php 
-      $page = isset($_GET['p']) ? $_GET['p'] : 'home';
+    <!-- Gallery Details Section -->
+    <section id="gallery-details" class="gallery-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center">
+          <img style="max-width: 1052px;" src="assets/img/berita/<?= $news['file_upload']; ?>" alt="">
+        </div>
 
-      if($page == 'home') 
-        include('home.php');
-      else if($page == 'berita') 
-        include('berita.php');
-      else
-        include('contents.php');
-    ?>
+        <div class="row justify-content-center gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2><?= $news['judul_berita']; ?></h2>
+              <p><?= $news['isi_berita']; ?></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Details Section -->
+
   </main>
 
   <footer id="footer" class="footer">
@@ -115,13 +95,6 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <?php
-    if($page == 'home'){ ?>
-      <div id="preloader">
-        <div class="line"></div>
-      </div>
-  <?php } ?>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -132,7 +105,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/navbar.js"></script>
+
 </body>
 
 </html>

@@ -40,7 +40,7 @@
                   <img src="assets/img/berita/<?= $new["file_upload"]; ?>" class="img-fluid h-100" alt="">
                   <div class="gallery-links d-flex align-items-center justify-content-center">
                     <a href="assets/img/berita/<?= $new["file_upload"]; ?>" title=<?= $new["file_upload"]; ?> class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                    <a href="" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="berita-single.php?id=<?= $new['id']; ?>" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>

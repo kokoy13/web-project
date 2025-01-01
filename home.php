@@ -1,54 +1,47 @@
-<div class="container">
-  <h2>Berita Terbaru</h2>
+<!-- Hero Section -->
+<?php
+  include('function/query.php');
 
-  <div class="row">
-    <?php
-    include 'koneksi.php';
+  $news = news2();
+?>
+    <section id="hero" class="hero section">
 
-    $d = isset($_GET['d']) ? $_GET['d'] : 'home';
-
-    switch ($d) {
-      case 'home':
-        $ambil_berita = mysqli_query($db, "SELECT * FROM berita ORDER BY id DESC LIMIT 6");
-        while ($data_berita = mysqli_fetch_array($ambil_berita)) {
-          ?>
-          <div class="col-4 mb-3">
-            <div class="card">
-              <img src="admin/uploads/<?= htmlspecialchars($data_berita['file_upload']) ?>" class="card-img-top" height="200"
-                alt="<?= htmlspecialchars($data_berita['judul_berita']) ?>">
-              <div class="card-body">
-                <h5 class="card-title"><?= htmlspecialchars($data_berita['judul_berita']) ?></h5>
-                <p class="card-text"><?= htmlspecialchars(substr($data_berita['isi_berita'], 0, 250)) ?>...</p>
-                <a href="index.php?d=detail&id=<?= $data_berita['id'] ?>" class="btn btn-primary">selengkapnya...</a>
-              </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+            <h2><span>Welcome to Jurusan</span><span class="underlight">Teknologi Informasi</span><span> Politeknik Negeri Padang</span></h2>
+            <p>Informasi tentang mahasiswa jurusan Teknologi Informasi Politeknik Negeri Padang. </p>
+            <a href="?p=mhs" class="btn-get-started">Lihat Mahasiswa</a>
           </div>
-          <?php
-        }
-        break;
+        </div>
+      </div>
 
-      case 'detail':
-        if (isset($_GET['id'])) {
-          $id = intval($_GET['id']);
-          $ambil_berita = mysqli_query($db, "SELECT * FROM berita WHERE id='$id'");
-          if ($data_berita = mysqli_fetch_array($ambil_berita)) {
-            ?>
-            <div class="col-8 mb-3">
-              <div class="card">
-                <img src="admin/uploads/<?= htmlspecialchars($data_berita['file_upload']) ?>" class="card-img-top" height="400"
-                  alt="<?= htmlspecialchars($data_berita['judul_berita']) ?>">
-                <div class="card-body">
-                  <h5 class="card-title"><?= htmlspecialchars($data_berita['judul_berita']) ?></h5>
-                  <p class="card-text"><?= nl2br(htmlspecialchars($data_berita['isi_berita'])) ?></p>
-                  <a href="index.php" class="btn btn-secondary">Back to Home</a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+
+          <?php
+            foreach($news as $new){ ?>
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="gallery-item h-100">
+                  <img src="assets/img/berita/<?= $new["file_upload"]; ?>" class="img-fluid h-100" alt="">
+                  <div class="gallery-links d-flex align-items-center justify-content-center">
+                    <a href="assets/img/berita/<?= $new["file_upload"]; ?>" title=<?= $new["file_upload"]; ?> class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <a href="" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <?php
-          }
-        }
-        break;
-    }
-    ?>
-  </div>
-</div>
+            <?php }
+          ?>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Gallery Section -->
