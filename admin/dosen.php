@@ -35,7 +35,7 @@ switch ($aksi) {
                         echo "<td>" . $row['nama_dosen'] . "</td>";
                         echo "<td>" . $row['email'] . "</td>";
                         echo "<td>" . $row['nama_prodi'] . "</td>";
-                        echo "<td>" . $row['notelp'] . "</td>";
+                        echo "<td>" . $row['telp'] . "</td>";
                         echo "<td>" . $row['alamat'] . "</td>";
                         echo "<td>
                         <a href='index.php?p=dosen&aksi=edit&nip=" . $row['nip'] . "' class='btn btn-warning btn-sm'>Edit</a>

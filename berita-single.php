@@ -1,6 +1,6 @@
 <?php
   include('function/query.php');
-  include('../koneksi.php');
+  include('koneksi.php');
   $id = ($_GET['id']);
   $news = query("SELECT * FROM berita WHERE id = '$id'")[0];
 ?>

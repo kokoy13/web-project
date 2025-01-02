@@ -29,7 +29,7 @@
                 <td><?= $arrData['nama'] ?></td>
                 <td><?= $arrData['email'] ?></td>
                 <td><?= $arrData['nama_prodi'] ?></td>
-                <td><?= $arrData['jk'] ?></td>
+                <td><?= $arrData['jenis_kelamin'] ?></td>
                 <td><?= $arrData['alamat'] ?></td>
                 <td>
                     <a href="?p=mhs&aksi=edit&nim=<?= $arrData['nim'] ?>" class="btn btn-warning">edit</a>

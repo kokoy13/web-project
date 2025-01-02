@@ -1,5 +1,5 @@
 <?php
-    include('../koneksi.php');
+    include('koneksi.php');
     include('query.php');
     
     function setContent(){
