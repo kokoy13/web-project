@@ -5,7 +5,7 @@
             
             $nama = $_POST['nama'];
             $nim = $_POST['nim'];
-            $jk = $_POST['jk'];
+            $jk = $_POST['jenis_kelamin'];
             $prodi = $_POST['prodi'];
             $hobis = $_POST['hobi'];
             $alamat = $_POST['alamat'];
@@ -22,7 +22,7 @@
             $hobby = implode(',', $hobis);
 
 
-            $insert = mysqli_query($db,"INSERT INTO mahasiswa(nim,nama,tgl_lahir,jk,email,alamat,prodi_id,hobi) VALUES ('$nim','$nama','$tgl_lhr','$jk','$email','$alamat','$prodi','$hobby')");
+            $insert = mysqli_query($db,"INSERT INTO mahasiswa(nim,nama,tanggal_lahir,jenis_kelamin,email,alamat,prodi_id,hobi) VALUES ('$nim','$nama','$tgl_lhr','$jk','$email','$alamat','$prodi','$hobby')");
             if($insert){
                 echo("<script>window.location='index.php?p=mhs'</script>");
             }
@@ -43,7 +43,7 @@
             
             $nama = $_POST['nama'];
             $nim = $_POST['nim'];
-            $jk = $_POST['jk'];
+            $jk = $_POST['jenis_kelamin'];
             $prodi = $_POST['prodi'];
             $hobis = $_POST['hobi'];
             $alamat = $_POST['alamat'];
@@ -61,8 +61,8 @@
 
             $update = mysqli_query($db,"UPDATE mahasiswa SET 
                 nama='$nama',
-                tgl_lahir='$tgl_lhr',
-                jk='$jk',
+                tanggal_lahir='$tgl_lhr',
+                jenis_kelamin='$jk',
                 email='$email',
                 alamat='$alamat',
                 prodi_id='$prodi',

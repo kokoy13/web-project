@@ -30,7 +30,7 @@ switch ($aksi) {
                     <td><?= $berita['judul_berita'] ?></td>
                     <td><a href="uploads/<?= $berita['file_upload'] ?>" target="_blank">Lihat File</a></td>
                     <td><?= $berita['date_created'] ?></td>
-                    <td>
+                    <td class="d-fle gap-3">
                         <a href="index.php?p=berita&aksi=edit&id_edit=<?= $berita['id'] ?>" class="btn btn-warning">Edit</a>
                         <a href="proses_berita.php?proses=delete&id=<?= $berita['id'] ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</a>
                     </td>

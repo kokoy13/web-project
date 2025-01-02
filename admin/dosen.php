@@ -108,7 +108,7 @@ switch ($aksi) {
                             <div class="row mb-3">
                                 <label class="col-sm-3 col-form-label">No Telepon</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" name="notelp">
+                                    <input type="text" class="form-control" name="telp">
                                 </div>
                             </div>
 
@@ -160,7 +160,7 @@ switch ($aksi) {
             $nama_dosen = $_POST['nama_dosen'];
             $email = $_POST['email'];
             $prodi_id = $_POST['prodi'];
-            $notelp = $_POST['notelp'];    
+            $notelp = $_POST['telp'];    
             $alamat = $_POST['alamat'];
 
         }
@@ -199,7 +199,7 @@ switch ($aksi) {
                     <!-- Notelp -->
                     <div class="mb-3">
                         <label class="form-label">No Telepon</label>
-                        <input type="text" name="notelp" class="form-control" value="<?= $data['notelp'] ?>" required>
+                        <input type="text" name="notelp" class="form-control" value="<?= $data['telp'] ?>" required>
                     </div>
 
                     <!-- Alamat -->

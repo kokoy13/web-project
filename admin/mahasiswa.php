@@ -87,9 +87,9 @@
                     </select>
             </div>
             <div class="mb-3 pb-3">
-                <label for="jk" class="form-label">Jenis Kelamin</label><br>
-                <input type="radio" class="form-check-input me-2" name="jk" id="lk" value="L" checked><label for="lk">Laki-Laki</label>
-                <input type="radio" class="form-check-input ms-4 me-2" name="jk" id="pr" value="P"><label for="pr">Perempuan</label>
+                <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label><br>
+                <input type="radio" class="form-check-input me-2" name="jenis_kelamin" id="lk" value="L" checked><label for="lk">Laki-Laki</label>
+                <input type="radio" class="form-check-input ms-4 me-2" name="jenis_kelamin" id="pr" value="P"><label for="pr">Perempuan</label>
             </div>
             <div class="mb-3 pb-3">
                 <label for="prodi" class="form-label">Prodi</label>
@@ -138,7 +138,7 @@
         $no = 1;
         
         $arrData = mysqli_fetch_array($getData);
-        $tgl = explode('-',$arrData['tgl_lahir']);
+        $tgl = explode('-',$arrData['tanggal_lahir']);
         $hobies = explode(',', $arrData['hobi']);
     ?>
 
@@ -190,9 +190,9 @@
                     </select>
             </div>
             <div class="mb-3 pb-3">
-                <label for="jk" class="form-label">Jenis Kelamin</label><br>
-                <input type="radio" class="form-check-input me-2" name="jk" id="lk" value="L" <?= $arrData['jk'] == 'L' ? 'checked' : '' ?>><label for="lk">Laki-Laki</label>
-                <input type="radio" class="form-check-input ms-4 me-2" name="jk" id="pr" value="P"  <?= $arrData['jk'] == 'P' ? 'checked' : '' ?>><label for="pr">Perempuan</label>
+                <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label><br>
+                <input type="radio" class="form-check-input me-2" name="jenis_kelamin" id="lk" value="L" <?= $arrData['jenis_kelamin'] == 'L' ? 'checked' : '' ?>><label for="lk">Laki-Laki</label>
+                <input type="radio" class="form-check-input ms-4 me-2" name="jenis_kelamin" id="pr" value="P"  <?= $arrData['jenis_kelamin'] == 'P' ? 'checked' : '' ?>><label for="pr">Perempuan</label>
             </div>
             <div class="mb-3 pb-3">
                 <label for="prodi" class="form-label">Prodi</label>
@@ -233,7 +233,7 @@
                 
                 $nama = $_POST['nama'];
                 $nim = $_POST['nim'];
-                $jk = $_POST['jk'];
+                $jk = $_POST['jenis_kelamin'];
                 $prodi = $_POST['prodi'];
                 $hobis = $_POST['hobi'];
                 $alamat = $_POST['alamat'];
@@ -251,8 +251,8 @@
 
                 $update = mysqli_query($db,"UPDATE mahasiswa SET 
                     nama='$nama',
-                    tgl_lahir='$tgl_lhr',
-                    jk='$jk',
+                    tanggal_lahir='$tgl_lhr',
+                    jenis_kelamin='$jk',
                     email='$email',
                     alamat='$alamat',
                     prodi_id='$prodi',

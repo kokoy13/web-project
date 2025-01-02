@@ -13,7 +13,7 @@ if ($_GET['proses'] == 'insert') {
         // Handle file upload
         $file_upload = '';
         if (!empty($_FILES['file_upload']['name'])) {
-            $target_directory = "uploads/";
+            $target_directory = "../assets/img/berita/";
             $file_upload = time() . '_' . basename($_FILES['file_upload']['name']);
             $target_file = $target_directory . $file_upload;
 
